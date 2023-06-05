@@ -1,5 +1,14 @@
+Github Link: https://github.com/Aruna-Selvam/PerScholas/
+
 Login Email:  admin@gmail.com
 password:123
+
+
+Project Description:
+
+The Hospital Management System Front-End Project is a web-based application designed to facilitate the management and organization of a hospital's daily operations. It provides an intuitive and user-friendly interface for both staff members and patients to interact with the system.
+
+The website is built using HTML, CSS, and JavaScript. 
 
 Table created in Patient page .If Get patient details is clicked, patients detail is displayed as a table. 
 Events and For loops are used to generate table and get values for the table(Patient.js).
