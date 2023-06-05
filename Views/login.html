@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Login Form</title>
+    <link rel="stylesheet" href="../Styles/style.css" type="text/css">
+    <script src="../JS/login.js" ></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section>
+        <div>
+            <img src="../Images/hos.webp" width="63%" height="750">
+        </div>
+    </section>
+    <section>
+    <div class="center">
+        <h1>Login</h1>
+        <form method="post" ></form>
+        <div class="txt_field">
+            <label id="email-label">Username</label>
+            <input type="text" id="email" minlength=3 pattern="^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$" required >
+            <span id="email-error"></span>
+        </div>
+        <div class="txt_field">
+            <label>Password</label>      
+            <input type="password" id="password" required>
+            <span></span>
+        </div>
+        <div>
+        <input type="submit" value ="Login" onclick="auth()"></div>
+        
+        <div class="signup_link">
+         Not a member?   <a href ="signup.html">Sign Up</a>
+         &nbsp&nbsp<a href ="../Views/home.html">Home</a>
+        </div>
+        
+    </div>
+</section>
+</body>
+
+
+</html>

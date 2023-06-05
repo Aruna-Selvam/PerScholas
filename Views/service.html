@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <style>.nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 200px;
+        background: #bbbdc1;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .nav,
+      .nav .nav-links {
+        display: flex;
+        align-items: center;
+      }
+      .nav {
+        justify-content: space-between;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .nav .logo {
+        font-size: 22px;
+        font-weight: 500;
+        
+      }
+      .nav .nav-links {
+        column-gap: 20px;
+        list-style: none;
+      }
+      .nav .nav-links a {
+        transition: all 0.2s linear;
+      }
+      .nav.openSearch .nav-links a {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .nav .search-icon {
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .nav .search-box {
+        position: absolute;
+        right: 250px;
+        height: 45px;
+        max-width: 555px;
+        width: 100%;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.2s linear;
+      }
+      .nav.openSearch .search-box {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      
+      
+      .nav .navOpenBtn,
+      .nav .navCloseBtn {
+        display: none;
+      }
+      
+      /* responsive */
+      @media screen and (max-width: 1160px) {
+        .nav {
+          padding: 15px 100px;
+        }
+        .nav .search-box {
+          right: 150px;
+        }
+      }
+      @media screen and (max-width: 950px) {
+        .nav {
+          padding: 15px 50px;
+        }
+        .nav .search-box {
+          right: 100px;
+          max-width: 400px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .nav .navOpenBtn,
+        .nav .navCloseBtn {
+          display: block;
+        }
+        .nav {
+          padding: 15px 20px;
+        }
+        .nav .nav-links {
+          position: fixed;
+          top: 0;
+          left: -100%;
+          height: 100%;
+          max-width: 280px;
+          width: 100%;
+          padding-top: 100px;
+          row-gap: 30px;
+          flex-direction: column;
+          background-color: #11101d;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          transition: all 0.4s ease;
+          z-index: 100;
+        }
+        .nav.openNav .nav-links {
+          left: 0;
+        }
+        .nav .navOpenBtn {
+          color: #fff;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        .nav .navCloseBtn {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          color: #fff;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        .nav .search-box {
+          top: calc(100% + 10px);
+          max-width: calc(100% - 20px);
+          right: 50%;
+          transform: translateX(50%);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+      }
+      
+      </style>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body class="about">
+    <section id="header">
+        <nav class="nav">
+          <i class="uil uil-bars navOpenBtn"></i>
+          <img src="../Images/logo hos.jpg" width="100" height="50">
+          <p><h5 id="yash">Yash Group of Hospitals</h5></p>
+          <ul class="nav-links" id="navbar">
+            <i class="uil uil-times navCloseBtn"></i>
+            
+            <a href="home.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Home</a>
+             
+             <a href="service.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Service</a>
+             <a href="Schedule.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Schedule Appointment</a>
+             <a href="about.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">About Us</a>
+             <a href="patient.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Patient</a>
+             <a href="login.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Login</a>
+             </ul>
+    
+          
+        </nav>
+      </section>
+      <section id="ser">
+        <div id="serul" >
+            <p><h1 class="se" style="color:blue;font-size:46px; padding-top: 10%; ">Services Available</h1></p>
+    
+            <ul  >
+                <li>Emergency Care</li>
+                <li>Diagnostic Testing</li>
+                <li>Lab Work</li>
+                <li>Scheduled Surgeries</li>
+            </ul>
+        </div>
+        
+    </section>
+</body>
+</html> 
